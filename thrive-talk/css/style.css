@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-.site-header__container {
+.site-header {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -133,7 +133,7 @@ body {
   color: #FAB63E;
 }
 
-.why-thrive__container {
+.why-thrive {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -143,8 +143,7 @@ body {
   margin: 0 auto;
   background: #62D0DF;
 }
-
-.title {
+.why-thrive__title {
   position: absolute;
   width: 223px;
   height: 51px;
@@ -156,8 +155,7 @@ body {
   letter-spacing: -0.006em;
   color: #FFFFFF;
 }
-
-.subtitle {
+.why-thrive__description {
   position: absolute;
   width: 555px;
   height: 235px;
@@ -168,7 +166,6 @@ body {
   line-height: 35px;
   color: #FFFFFF;
 }
-
 .why-thrive__img {
   position: absolute;
   width: 525px;
