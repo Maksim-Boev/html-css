@@ -208,6 +208,30 @@ body {
   color: rgba(34, 53, 111, 0.5);
 }
 
+.mark {
+  margin-right: -20px;
+  margin-top: -8px;
+}
+.mark::marker {
+  font-size: 32px;
+  color: #E9B730;
+}
+
+.mark-text {
+  width: 260px;
+  font-size: 32px;
+  font-family: Larsseit, sans-serif;
+  color: #FFFFFF;
+}
+
+.padding-top {
+  width: 255px;
+  height: 72px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 25px;
+  margin-right: 32px;
+}
+
 .bloc4 {
   display: flex;
   max-width: 1440px;
@@ -233,26 +257,43 @@ body {
 .bloc4__item--4 {
   background: #0052C1;
 }
-.bloc4__mark {
-  margin-right: -20px;
-  margin-top: -8px;
+
+.bloc5 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  margin: 120px auto 0;
 }
-.bloc4__mark::marker {
-  font-size: 32px;
-  color: #E9B730;
+.bloc5 .padding-top {
+  width: 340px;
+  height: 96px;
+  margin-right: 120px;
 }
-.bloc4__mark--text {
-  width: 280px;
-  font-size: 32px;
-  font-family: Larsseit, sans-serif;
-  color: #FFFFFF;
+.bloc5__training {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 480px;
+  width: 426px;
+  padding-left: 54px;
 }
-.bloc4__padding-top {
-  width: 255px;
-  height: 72px;
-  border-bottom: 1px solid #FFFFFF;
-  margin-bottom: 25px;
-  margin-right: 32px;
+.bloc5__training--1 {
+  background: #22356F;
+}
+.bloc5__training--2 {
+  background: #0052C1;
+}
+.bloc5__training--3 {
+  background: url("../img/02.png");
+}
+.bloc5__training--4 {
+  background: #62D0DF;
+}
+.bloc5__training--5 {
+  background: #DEE1FF;
+}
+.bloc5__training--6 {
+  background: #8F00FF;
 }
 
 /*# sourceMappingURL=style.css.map */
