@@ -298,4 +298,33 @@ body {
   background: #8F00FF;
 }
 
+.bloc6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  margin: 20px auto 0;
+}
+.bloc6__list {
+  max-width: 480px;
+}
+
+.item {
+  margin: 55px 77px 37px 105px;
+}
+.item__title {
+  margin-bottom: 28px;
+  font-family: Larsseit, sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+  color: #22356F;
+}
+.item__subtitle {
+  font-family: Larsseit, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  color: rgba(34, 53, 111, 0.5);
+}
+
 /*# sourceMappingURL=style.css.map */
