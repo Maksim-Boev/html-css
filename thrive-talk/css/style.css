@@ -209,6 +209,8 @@ body {
 }
 
 .mark {
+  width: 43px;
+  height: 43px;
   margin-right: -20px;
   margin-top: -8px;
 }
@@ -267,15 +269,15 @@ body {
 .bloc5 .padding-top {
   width: 340px;
   height: 96px;
-  margin-right: 120px;
+  margin-right: 75px;
 }
 .bloc5__training {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   height: 480px;
-  width: 426px;
-  padding-left: 54px;
+  width: 410px;
+  padding-left: 70px;
 }
 .bloc5__training--1 {
   background: #22356F;

@@ -238,6 +238,8 @@ body {
 }
 
 .mark {
+  width: 43px;
+  height: 43px;
   margin-right: -20px;
   margin-top: -8px;
 
@@ -275,7 +277,6 @@ body {
     width: 360px;
     padding-left: 54px;
 
-
     &--1 {
       background: #FFE2DE;
     }
@@ -303,7 +304,7 @@ body {
   .padding-top {
     width: 340px;
     height: 96px;
-    margin-right: 120px;
+    margin-right: 75px;
   }
 
   &__training {
@@ -311,8 +312,8 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     height: 480px;
-    width: 426px;
-    padding-left: 54px;
+    width: 410px;
+    padding-left: 70px;
 
     &--1 {
       background: #22356F;
