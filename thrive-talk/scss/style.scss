@@ -506,6 +506,17 @@ body {
 
           color: #22356F;
         }
+
+        &__subtitle {
+          font-size: 14px;
+          line-height: 23px;
+
+          color: rgba(34, 53, 111, 0.5);
+
+          span {
+            color: deepskyblue;
+          }
+        }
       }
     }
   }
