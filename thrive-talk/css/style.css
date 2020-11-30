@@ -359,7 +359,6 @@ body {
   background: #22356F;
 }
 .bloc8__item {
-  width: 100%;
   margin: 100px 200px 40px 180px;
 }
 .bloc8__item__contact {
@@ -396,10 +395,10 @@ body {
 }
 .footer__info {
   display: flex;
-  width: 100%;
+  flex-grow: 1;
 }
 .footer__legal {
-  width: 100%;
+  flex-grow: 1;
   padding: 26px 0 26px 200px;
   background: #62D0DF;
   font-size: 14px;
