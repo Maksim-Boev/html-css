@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Larsseit, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +23,6 @@ body {
   height: 167px;
   left: 179px;
   top: 305px;
-  font-family: Larsseit, sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 53px;
@@ -30,7 +35,6 @@ body {
   height: 161px;
   left: 179px;
   top: 491px;
-  font-family: Larsseit, sans-serif;
   font-size: 24px;
   line-height: 42px;
   color: #22356F;
@@ -47,7 +51,6 @@ body {
   z-index: 1;
 }
 .nav__logo {
-  font-family: Larsseit, sans-serif;
   font-size: 24px;
   line-height: 27px;
   letter-spacing: -0.035em;
@@ -60,7 +63,6 @@ body {
 .nav-item__link {
   margin: 0;
   padding: 10px 13px;
-  font-family: Larsseit, sans-serif;
   font-size: 14px;
   color: #22356F;
   border-bottom: 1px solid transparent;
@@ -112,7 +114,6 @@ body {
 .who__text {
   display: flex;
   align-items: center;
-  font-family: Larsseit, sans-serif;
   font-size: 16px;
   line-height: 23px;
   color: #FFFFFF;
@@ -124,7 +125,6 @@ body {
   height: 43px;
   left: 367px;
   top: 718px;
-  font-family: Larsseit, sans-serif;
   font-size: 16px;
   line-height: 23px;
   display: flex;
@@ -149,7 +149,6 @@ body {
   height: 51px;
   left: 179px;
   top: 151px;
-  font-family: Larsseit, sans-serif;
   font-size: 36px;
   line-height: 27px;
   letter-spacing: -0.006em;
@@ -161,7 +160,6 @@ body {
   height: 235px;
   left: 179px;
   top: 277px;
-  font-family: Larsseit, sans-serif;
   font-size: 24px;
   line-height: 35px;
   color: #FFFFFF;
@@ -180,7 +178,6 @@ body {
   width: 1440px;
 }
 .bloc3__title {
-  font-family: Larsseit, sans-serif;
   font-size: 16px;
   line-height: 23px;
   padding-top: 150px;
@@ -191,7 +188,6 @@ body {
   width: 590px;
   padding-top: 150px;
   padding-right: 425px;
-  font-family: Larsseit, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
@@ -202,7 +198,6 @@ body {
 .text {
   display: flex;
   justify-content: center;
-  font-family: Larsseit, sans-serif;
   letter-spacing: 0.06em;
   margin: 70px 0 25px 0;
   color: rgba(34, 53, 111, 0.5);
@@ -222,7 +217,6 @@ body {
 .mark-text {
   width: 260px;
   font-size: 32px;
-  font-family: Larsseit, sans-serif;
   color: #FFFFFF;
 }
 
@@ -313,14 +307,12 @@ body {
 }
 .item__title {
   margin-bottom: 28px;
-  font-family: Larsseit, sans-serif;
   font-size: 28px;
   line-height: 33px;
   letter-spacing: -0.03em;
   color: #22356F;
 }
 .item__subtitle {
-  font-family: Larsseit, sans-serif;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: -0.03em;
@@ -329,7 +321,7 @@ body {
 
 .bloc7 {
   display: flex;
-  max-width: 1440px;
+  width: 1440px;
   margin: 40px auto 0;
 }
 .bloc7__item {
@@ -337,7 +329,6 @@ body {
 }
 .bloc7__item__title {
   margin-bottom: 255px;
-  font-family: Larsseit, sans-serif;
   font-size: 16px;
   line-height: 12px;
   letter-spacing: 0.06em;
@@ -345,7 +336,6 @@ body {
 }
 .bloc7__item__subtitle {
   margin-bottom: 150px;
-  font-family: Larsseit, sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 53px;
@@ -356,11 +346,85 @@ body {
   color: deepskyblue;
 }
 .bloc7__item__btn {
-  font-family: Larsseit, sans-serif;
   font-size: 16px;
   line-height: 23px;
   letter-spacing: 0.1em;
   color: #FAB63E;
+}
+
+.bloc8 {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  background: #22356F;
+}
+.bloc8__item {
+  width: 100%;
+  margin: 100px 200px 40px 180px;
+}
+.bloc8__item__contact {
+  margin-bottom: 230px;
+  font-size: 16px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+.bloc8__item__title {
+  margin-bottom: 75px;
+  font-size: 64px;
+  line-height: 94px;
+  color: #FFFFFF;
+}
+.bloc8__item__subtitle {
+  margin-bottom: 65px;
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+.bloc8__item__btn {
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #62D0DF;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  margin: 0 auto;
+}
+.footer__info {
+  display: flex;
+  width: 100%;
+}
+.footer__legal {
+  width: 100%;
+  padding: 26px 0 26px 200px;
+  background: #62D0DF;
+  font-size: 14px;
+  line-height: 11px;
+  color: #FFFFFF;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 100px 40px 75px 70px;
+}
+.footer__list .list__item:last-child {
+  margin: 0;
+}
+.footer__list .list__item {
+  max-width: 250px;
+  margin-right: 35px;
+}
+.footer__list .list__item__title {
+  padding-bottom: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 11px;
+  color: #22356F;
 }
 
 /*# sourceMappingURL=style.css.map */
