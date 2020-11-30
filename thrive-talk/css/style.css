@@ -237,6 +237,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  box-sizing: border-box;
   height: 360px;
   width: 360px;
   padding-left: 54px;
@@ -269,8 +270,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  box-sizing: border-box;
   height: 480px;
-  width: 410px;
+  width: 480px;
   padding-left: 70px;
 }
 .bloc5__training--1 {
