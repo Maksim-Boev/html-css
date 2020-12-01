@@ -17,27 +17,52 @@ body {
   width: 1440px;
   margin: 0 auto;
 }
-.site-header__title {
-  position: absolute;
-  width: 500px;
-  height: 167px;
-  left: 179px;
-  top: 305px;
+.site-header__bloc {
+  display: flex;
+  flex-direction: column;
+  margin: 305px 460px 75px 175px;
+}
+.site-header__bloc__title {
+  display: flex;
+  padding-bottom: 70px;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 43px;
   line-height: 53px;
-  letter-spacing: -0.035em;
   color: #22356F;
 }
-.site-header__description {
-  position: absolute;
-  width: 469px;
-  height: 161px;
-  left: 179px;
-  top: 491px;
+.site-header__bloc__description {
+  display: flex;
+  padding-bottom: 60px;
   font-size: 24px;
   line-height: 42px;
   color: #22356F;
+}
+.site-header__bloc .btn {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+}
+.site-header__bloc .btn__who {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  margin-right: 50px;
+  background: #F9B640;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.site-header__bloc .btn__wat {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #FAB63E;
 }
 
 .nav {
@@ -51,6 +76,7 @@ body {
   z-index: 1;
 }
 .nav__logo {
+  margin-left: 27px;
   font-size: 24px;
   line-height: 27px;
   letter-spacing: -0.035em;
@@ -101,38 +127,6 @@ body {
   left: 697.98px;
 }
 
-.who {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 150px;
-  height: 50px;
-  left: 179px;
-  top: 715px;
-  background: #F9B640;
-}
-.who__text {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 23px;
-  color: #FFFFFF;
-}
-
-.wat {
-  position: absolute;
-  width: 150px;
-  height: 43px;
-  left: 367px;
-  top: 718px;
-  font-size: 16px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.1em;
-  color: #FAB63E;
-}
-
 .why-thrive {
   display: flex;
   justify-content: space-between;
@@ -143,32 +137,25 @@ body {
   margin: 0 auto;
   background: #62D0DF;
 }
-.why-thrive__title {
-  position: absolute;
-  width: 223px;
-  height: 51px;
-  left: 179px;
-  top: 151px;
+.why-thrive__bloc {
+  display: flex;
+  flex-direction: column;
+  margin: 150px 185px 90px 175px;
+}
+.why-thrive__bloc__title {
+  padding-bottom: 75px;
   font-size: 36px;
+  font-weight: bold;
   line-height: 27px;
-  letter-spacing: -0.006em;
   color: #FFFFFF;
 }
-.why-thrive__description {
-  position: absolute;
-  width: 555px;
-  height: 235px;
-  left: 179px;
-  top: 277px;
+.why-thrive__bloc__description {
   font-size: 24px;
   line-height: 35px;
   color: #FFFFFF;
 }
-.why-thrive__img {
-  position: absolute;
-  width: 525px;
-  height: 604px;
-  left: 915px;
+.why-thrive__bloc__description span {
+  font-weight: bold;
 }
 
 .bloc3 {
