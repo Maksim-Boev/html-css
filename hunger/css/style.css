@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-main {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  background: url("../img/header-bg.png");
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 70px;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list__item {
+  display: flex;
+  padding: 20px;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+}
+.nav__wheel-icon {
+  max-height: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

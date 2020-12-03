@@ -244,8 +244,6 @@ body {
 
 .bloc5 {
   display: grid;
-  grid-template-areas: "bloc1 bloc2 bloc3" "bloc4 bloc5 bloc6";
-  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
 .bloc5__training {
@@ -272,9 +270,7 @@ body {
 
 .bloc6 {
   display: grid;
-  grid-template-areas: "bloc1 bloc2 bloc3" "bloc4 bloc5 bloc6";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }
 .bloc6__list {
   max-width: 480px;
@@ -301,30 +297,28 @@ body {
   max-height: 850px;
 }
 .bloc7__item {
-  padding: 103px 175px 42px 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 103px 5% 42px 106px;
 }
 .bloc7__item__title {
-  margin-bottom: 255px;
   font-size: 16px;
   line-height: 12px;
-  letter-spacing: 0.06em;
   color: #22356F;
 }
 .bloc7__item__subtitle {
-  margin-bottom: 150px;
   font-weight: bold;
   font-size: 36px;
   line-height: 53px;
-  letter-spacing: -0.01em;
   color: #22356F;
 }
-.bloc7__item__subtitle span {
-  color: deepskyblue;
+.bloc7__item__subtitle .bloc7-primary {
+  color: #62D0DF;
 }
 .bloc7__item__btn {
   font-size: 16px;
   line-height: 23px;
-  letter-spacing: 0.1em;
   color: #FAB63E;
 }
 
@@ -335,22 +329,21 @@ body {
   max-height: 800px;
 }
 .bloc8__item {
-  padding: 100px 200px 40px 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 10% 40px 8%;
 }
 .bloc8__item__contact {
-  margin-bottom: 230px;
   font-size: 16px;
-  line-height: 12px;
   color: #FFFFFF;
 }
 .bloc8__item__title {
-  margin-bottom: 75px;
   font-size: 64px;
   line-height: 94px;
   color: #FFFFFF;
 }
 .bloc8__item__subtitle {
-  margin-bottom: 65px;
   font-size: 36px;
   line-height: 53px;
   color: #FFFFFF;
@@ -382,23 +375,18 @@ body {
   color: #FFFFFF;
 }
 .footer__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   width: 100%;
-  margin: 100px 40px 75px 70px;
-}
-.footer__list .list__item:last-child {
-  margin: 0;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px 40px 75px 70px;
 }
 .footer__list .list__item {
   max-width: 250px;
-  margin-right: 35px;
 }
 .footer__list .list__item__title {
   padding-bottom: 40px;
   font-size: 14px;
   font-weight: bold;
-  line-height: 11px;
   color: #22356F;
 }
 .footer__list .list__item__subtitle {
@@ -406,8 +394,8 @@ body {
   line-height: 23px;
   color: rgba(34, 53, 111, 0.5);
 }
-.footer__list .list__item__subtitle span {
-  color: deepskyblue;
+.footer__list .list__item__subtitle .footer-email {
+  color: #006DFF;
 }
 
 /*# sourceMappingURL=style.css.map */
