@@ -28,8 +28,8 @@
   font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
 }
-.nav__wheel-icon {
-  background: url("img/icon/wheel.png");
+.nav__logo {
+  padding-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

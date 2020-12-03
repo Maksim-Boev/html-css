@@ -178,7 +178,8 @@ body {
 .why-thrive__bloc {
   display: flex;
   flex-direction: column;
-  margin: 150px 185px 90px 175px;
+  justify-content: space-between;
+  padding: 10% 10% 5% 10%;
 }
 .why-thrive__bloc__title {
   padding-bottom: 75px;
@@ -199,7 +200,7 @@ body {
 .bloc3__bloc {
   display: flex;
   justify-content: space-between;
-  margin: 150px 425px 75px 100px;
+  padding: 10% 25% 5% 10%;
   width: 100%;
 }
 .bloc3__title {
