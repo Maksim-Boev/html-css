@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+  display: flex;
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
@@ -59,16 +60,12 @@ body {
   &-4 {
     background: #0052C1;
   }
-
-
 }
 
 .site-header {
-  display: flex;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  //width: 1440px;
   margin: 0 auto;
 
   &__bloc {
@@ -113,15 +110,6 @@ body {
         font-size: 16px;
         line-height: 23px;
         color: #FFFFFF;
-
-        //&__text {
-        //  display: flex;
-        //  align-items: center;
-        //
-        //  font-size: 16px;
-        //  line-height: 23px;
-        //  color: #FFFFFF;
-        //}
       }
 
       &__wat {
@@ -138,7 +126,6 @@ body {
     }
   }
 }
-
 
 .nav {
   display: flex;
@@ -207,14 +194,13 @@ body {
 }
 
 .why-thrive {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
   overflow: hidden;
-  //width: 1440px;
-  height: 604px;
   margin: 0 auto;
   background: #62D0DF;
+
+  &__img {
+    max-height: 622px;
+  }
 
   &__bloc {
     display: flex;
@@ -244,28 +230,23 @@ body {
 }
 
 .bloc3 {
-  display: flex;
-  justify-content: space-between;
-  //margin: 0 auto;
-  //width: 1440px;
+  &__bloc {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 425px 75px 100px;
+    width: 100%;
+  }
 
   &__title {
     font-size: 16px;
-    line-height: 23px;
-    padding-top: 150px;
-    padding-left: 105px;
 
     color: #22356F;
   }
 
   &__description {
     width: 590px;
-    padding-top: 150px;
-    padding-right: 425px;
     font-size: 24px;
     font-weight: 700;
-    line-height: 34px;
-    letter-spacing: 0.005em;
 
     color: #22356F;
   }
@@ -274,43 +255,12 @@ body {
 .text {
   display: flex;
   justify-content: center;
-  letter-spacing: 0.06em;
   margin: 70px 0 25px 0;
 
   color: rgba(34, 53, 111, 0.5);
 }
 
-//.mark {
-//  width: 43px;
-//  height: 43px;
-//  margin-right: -20px;
-//  margin-top: -8px;
-//
-//  &::marker {
-//    font-size: 32px;
-//    color: #E9B730
-//  }
-//}
-//
-//.mark-text {
-//  width: 260px;
-//  font-size: 32px;
-//  color: #FFFFFF;
-//}
-//
-//.padding-top {
-//  width: 255px;
-//  height: 72px;
-//  border-bottom: 1px solid #FFFFFF;
-//  margin-bottom: 25px;
-//  margin-right: 32px;
-//}
-
 .bloc4 {
-  display: flex;
-  //max-width: 1440px;
-  //margin: 0 auto;
-
   &__item {
     display: flex;
     flex-wrap: wrap;
@@ -409,8 +359,6 @@ body {
 }
 
 .bloc7 {
-  display: flex;
-
   &__background {
     max-height: 850px;
   }
@@ -455,9 +403,9 @@ body {
 }
 
 .bloc8 {
-  display: flex;
   background: #22356F;
-  &__background{
+
+  &__background {
     max-height: 800px;
   }
 
@@ -505,11 +453,11 @@ body {
 
 
 .footer {
-  display: flex;
   flex-wrap: wrap;
-&__img{
-  max-height: 380px;
-}
+
+  &__img {
+    max-height: 380px;
+  }
 
   &__info {
     display: flex;
