@@ -29,7 +29,7 @@
   color: #FFFFFF;
 }
 .nav__wheel-icon {
-  max-height: 150px;
+  background: url("img/icon/wheel.png");
 }
 
 /*# sourceMappingURL=style.css.map */
