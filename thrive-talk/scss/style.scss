@@ -9,18 +9,72 @@ body {
   padding: 0;
 }
 
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.marketing {
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+  width: 100%;
+  border-top: 1px solid #ffff;
+
+  &-dot {
+    font-size: 40px;
+    color: #E9B730;
+    padding-right: 20px;
+  }
+
+  &-text {
+    font-size: 32px;
+    color: #fff;
+  }
+}
+
+.block-4-marketing {
+  display: grid;
+  grid-template-areas: "bloc1 bloc2 bloc3 bloc4";
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 120px;
+
+  &-section {
+    padding: 70px 50px 178px 45px;
+  }
+
+  &-1 {
+    background: #FFE2DE;
+  }
+
+  &-2 {
+    background: #C4E769;
+  }
+
+  &-3 {
+    background: #62D0DF;
+  }
+
+  &-4 {
+    background: #0052C1;
+  }
+
+
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  width: 1440px;
+  //width: 1440px;
   margin: 0 auto;
 
   &__bloc {
     display: flex;
     flex-direction: column;
-    margin: 305px 460px 75px 175px;
+    margin: 305px 450px 75px 175px;
 
     &__title {
       display: flex;
@@ -133,26 +187,22 @@ body {
 }
 
 .background {
-  width: 1117px;
-  height: 840px;
   background: #F4F9E2;
 
   &__oval {
     position: absolute;
-    width: 807.71px;
-    height: 544.93px;
-    left: 860px;
-    top: 13px;
+    width: 807px;
+    height: 544px;
+    margin-left: 830px;
 
     background: #EDFDFF;
-    border-radius: 312.159px;
-    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+    border-radius: 312px;
+    transform: rotate(-45deg);
   }
 
   &__img {
-    position: absolute;
-    height: 875.78px;
-    left: 697.98px;
+    z-index: 1;
+    margin-left: -425px;
   }
 }
 
@@ -161,7 +211,7 @@ body {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  width: 1440px;
+  //width: 1440px;
   height: 604px;
   margin: 0 auto;
   background: #62D0DF;
@@ -196,8 +246,8 @@ body {
 .bloc3 {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 1440px;
+  //margin: 0 auto;
+  //width: 1440px;
 
   &__title {
     font-size: 16px;
@@ -230,36 +280,36 @@ body {
   color: rgba(34, 53, 111, 0.5);
 }
 
-.mark {
-  width: 43px;
-  height: 43px;
-  margin-right: -20px;
-  margin-top: -8px;
-
-  &::marker {
-    font-size: 32px;
-    color: #E9B730
-  }
-}
-
-.mark-text {
-  width: 260px;
-  font-size: 32px;
-  color: #FFFFFF;
-}
-
-.padding-top {
-  width: 255px;
-  height: 72px;
-  border-bottom: 1px solid #FFFFFF;
-  margin-bottom: 25px;
-  margin-right: 32px;
-}
+//.mark {
+//  width: 43px;
+//  height: 43px;
+//  margin-right: -20px;
+//  margin-top: -8px;
+//
+//  &::marker {
+//    font-size: 32px;
+//    color: #E9B730
+//  }
+//}
+//
+//.mark-text {
+//  width: 260px;
+//  font-size: 32px;
+//  color: #FFFFFF;
+//}
+//
+//.padding-top {
+//  width: 255px;
+//  height: 72px;
+//  border-bottom: 1px solid #FFFFFF;
+//  margin-bottom: 25px;
+//  margin-right: 32px;
+//}
 
 .bloc4 {
   display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
+  //max-width: 1440px;
+  //margin: 0 auto;
 
   &__item {
     display: flex;
@@ -289,25 +339,15 @@ body {
 }
 
 .bloc5 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1440px;
-  margin: 120px auto 0;
-
-  .padding-top {
-    width: 340px;
-    height: 96px;
-    margin-right: 75px;
-  }
+  display: grid;
+  grid-template-areas:
+        "bloc1 bloc2 bloc3"
+        "bloc4 bloc5 bloc6";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   &__training {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    box-sizing: border-box;
-    height: 480px;
-    width: 480px;
-    padding-left: 70px;
+    padding: 100px 70px 302px 70px;
 
     &--1 {
       background: #22356F;
@@ -336,10 +376,12 @@ body {
 }
 
 .bloc6 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1440px;
-  margin: 20px auto 0;
+  display: grid;
+  grid-template-areas:
+        "bloc1 bloc2 bloc3"
+        "bloc4 bloc5 bloc6";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 
   &__list {
     max-width: 480px;
@@ -368,11 +410,13 @@ body {
 
 .bloc7 {
   display: flex;
-  width: 1440px;
-  margin: 40px auto 0;
+
+  &__background {
+    max-height: 850px;
+  }
 
   &__item {
-    margin: 103px 175px 42px 106px;
+    padding: 103px 175px 42px 106px;
 
     &__title {
       margin-bottom: 255px;
@@ -412,12 +456,13 @@ body {
 
 .bloc8 {
   display: flex;
-  width: 1440px;
-  margin: 0 auto;
   background: #22356F;
+  &__background{
+    max-height: 800px;
+  }
 
   &__item {
-    margin: 100px 200px 40px 180px;
+    padding: 100px 200px 40px 180px;
 
     &__contact {
       margin-bottom: 230px;
@@ -462,8 +507,9 @@ body {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  width: 1440px;
-  margin: 0 auto;
+&__img{
+  max-height: 380px;
+}
 
   &__info {
     display: flex;
