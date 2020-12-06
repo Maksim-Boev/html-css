@@ -8,18 +8,23 @@
   padding: 0;
 }
 
+.soc-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .header-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
   margin: 0 auto;
   max-width: 1440px;
   background: url("../img/header-bg.png");
-}
-.header-main__social-btn {
-  color: #FFFFFF;
-  font-size: 20px;
 }
 .header-main .wrap {
   width: 316px;
@@ -27,15 +32,25 @@
 }
 .header-main .wrap .title__work {
   color: white;
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
+  writing-mode: tb;
 }
 .header-main__title {
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
+  justify-content: space-around;
+}
+.header-main__title .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header-main__title .social-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
   color: #FFFFFF;
   font-size: 20px;
 }
@@ -49,8 +64,18 @@
   color: #FFFFFF;
 }
 .header-main__title .title__work {
+  color: white;
+  transform: rotate(180deg);
+  writing-mode: tb;
+  margin-right: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+.header-main__title .title__social-btn {
+  display: flex;
+  flex-direction: column;
   color: #FFFFFF;
-  transform: rotate(-90deg);
+  font-size: 20px;
 }
 .header-main__title .title__title {
   display: flex;
@@ -70,7 +95,7 @@
 .header-main__title .title__wrap-btn {
   display: flex;
   justify-content: space-between;
-  width: 34.4%;
+  width: 57.3%;
 }
 .header-main__title .title__btn-colored {
   display: flex;
@@ -96,6 +121,16 @@
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.header-main__btn-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
 
 .nav {
   display: flex;
@@ -118,6 +153,16 @@
 }
 .nav__logo {
   padding: 25px;
+}
+
+.line {
+  position: absolute;
+  width: 699px;
+  height: 1px;
+  left: 295px;
+  top: 799px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(-90deg);
 }
 
 /*# sourceMappingURL=style.css.map */
