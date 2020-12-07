@@ -23,21 +23,23 @@
 
 .header-main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   max-width: 1440px;
+  max-height: 800px;
   background: url("../img/header-bg.png");
 
   .nav {
     display: flex;
     width: 90%;
+    padding-bottom: 125px;
 
     &-list {
       display: flex;
       justify-content: space-around;
       width: 43%;
-      height: 50%;
+      height: 100px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
       &__item {
@@ -82,7 +84,7 @@
         color: white;
         transform: rotate(180deg);
         writing-mode: tb;
-        margin-right: 40px;
+        margin-right: 42px;
         font-family: "Open Sans", sans-serif;
         font-size: 12px;
       }
@@ -111,7 +113,7 @@
       &__underline {
         display: flex;
         width: 60px;
-        height: 5.11px;
+        height: 5px;
         margin-bottom: 30px;
         background: #E8C300;
         border-radius: 50px;
@@ -164,12 +166,29 @@
 }
 
 .line {
-  position: absolute;
-  width: 699px;
-  height: 1px;
-  left: 295px;
-  top: 799px;
-
+  position: relative;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transform: rotate(-90deg);
+
+  &-left {
+    right: 29.5%;
+    width: 698px;
+    top: 125px;
+  }
+
+  &-right {
+    left: 29.5%;
+    width: 698px;
+    top: 123px;
+  }
+
+  &-center {
+    width: 455px;
+    top: 97px;
+
+    &-small {
+      width: 82px;
+      top: -39px;
+    }
+  }
 }
