@@ -17,6 +17,20 @@
   font-family: Banny, sans-serif;
   font-size: 36px;
   text-transform: uppercase;
+  position: relative;
+  line-height: 60px;
+}
+
+.title:after {
+  content: "";
+  height: 5px;
+  width: 60px;
+  background: #E8C300;
+  border-radius: 50px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .underline {
@@ -105,6 +119,7 @@
 .header-main .showcase__center .title {
   font-size: 96px;
   color: #FFFFFF;
+  line-height: normal;
 }
 .header-main .showcase__center .block-btn {
   display: flex;
@@ -264,6 +279,83 @@
 }
 .team__block .text .description {
   opacity: 0.9;
+}
+
+.booking__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 200px 0 130px;
+}
+.booking__block .square-bgr {
+  display: flex;
+  direction: rtl;
+  align-items: center;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+}
+.booking__block .square-bgr:before {
+  content: "";
+  width: 250px;
+  height: 250px;
+  border: 20px solid #E8C300;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+  position: absolute;
+  transform: translateX(50%);
+}
+.booking__block .booking__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.booking__block .form-table {
+  padding-top: 25px;
+  display: grid;
+  grid-template-areas: "name email" "phone people" "date time" "form-btn form-btn";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.booking__block .form-table .input {
+  padding: 22px 107px 22px 22px;
+  background: #E5E5E5;
+  border-radius: 5px;
+  border: 0;
+  color: rgba(51, 51, 51, 0.5);
+}
+.booking__block .form-table__name {
+  grid-area: name;
+}
+.booking__block .form-table__email {
+  grid-area: email;
+}
+.booking__block .form-table__phone {
+  grid-area: phone;
+}
+.booking__block .form-table__people {
+  grid-area: people;
+}
+.booking__block .form-table__date {
+  grid-area: date;
+}
+.booking__block .form-table__time {
+  grid-area: time;
+}
+.booking__block .form-table__btn {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  grid-area: form-btn;
+  background: #E8C300;
+  border-radius: 5px;
+  padding: 20px 0;
+  border: 0;
+}
+.booking__about {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(51, 51, 51, 0.5);
+  padding: 60px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
