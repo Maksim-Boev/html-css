@@ -263,7 +263,7 @@
   background: url("../img/team-bg.png") center center;
   background-size: cover;
 
-  .our {
+  .header-title {
     padding: 45px 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -334,56 +334,48 @@
       flex-direction: column;
       align-items: center;
       padding-top: 60px;
+      padding-right: 5px;
+      width: 50%;
     }
 
     .form-table {
       padding-top: 25px;
-      display: grid;
-      grid-template-areas:
-      "name email"
-      "phone people"
-      "date time"
-      "form-btn form-btn";
-      column-gap: 10px;
-      row-gap: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      //display: grid;
+      //grid-template-areas:
+      //"name email"
+      //"phone people"
+      //"date time"
+      //"form-btn form-btn";
+      //column-gap: 10px;
+      //row-gap: 10px;
 
       .input {
-        padding: 22px 107px 22px 22px;
+        padding: 22px 0 22px 22px;
+        width: 50%;
         background: #E5E5E5;
         border-radius: 5px;
         border: 0;
         color: rgba(51, 51, 51, 0.5);
-      }
 
-      &__name {
-        grid-area: name;
-      }
+        &-wrap {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 10px;
 
-      &__email {
-        grid-area: email;
-      }
-
-      &__phone {
-        grid-area: phone;
-      }
-
-      &__people {
-        grid-area: people;
-      }
-
-      &__date {
-        grid-area: date;
-      }
-
-      &__time {
-        grid-area: time;
+          .input:nth-child(odd) {
+            margin-right: 10px;
+          }
+        }
       }
 
       &__btn {
         font-family: "Open Sans", sans-serif;
         text-transform: uppercase;
+        font-weight: bold;
         color: #FFFFFF;
-        grid-area: form-btn;
         background: #E8C300;
         border-radius: 5px;
         padding: 20px 0;
@@ -391,10 +383,63 @@
       }
     }
   }
+
   &__about {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     color: rgba(51, 51, 51, 0.5);
     padding: 60px 0;
+  }
+}
+
+.specialties {
+  background: url("../img/specialties-bg.png") center center;
+  background-size: cover;
+
+  .header-title {
+    padding: 45px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  &__img {
+    border-radius: 5px;
+  }
+
+  &__block {
+    display: flex;
+    padding: 0 80px 100px 200px;
+
+    .square-bgr {
+      display: flex;
+      align-items: center;
+      filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    }
+
+    .square-bgr:before {
+      @include square(-50%)
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      padding: 115px 0 115px 80px;
+
+      .title, .subtitle, .description {
+        color: #FFF;
+      }
+
+      .description {
+        opacity: 0.9;
+      }
+    }
   }
 }
