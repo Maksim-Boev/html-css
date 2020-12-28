@@ -312,6 +312,7 @@
 }
 
 .booking {
+  $input-color-form: rgba(51, 51, 51, 0.5);
 
   &__block {
     display: flex;
@@ -334,8 +335,8 @@
       flex-direction: column;
       align-items: center;
       padding-top: 60px;
-      padding-right: 5px;
-      width: 50%;
+      padding-right: 70px;
+      width: 100%;
     }
 
     .form-table {
@@ -353,20 +354,37 @@
       //row-gap: 10px;
 
       .input {
+        box-sizing: border-box;
         padding: 22px 0 22px 22px;
         width: 50%;
         background: #E5E5E5;
         border-radius: 5px;
         border: 0;
-        color: rgba(51, 51, 51, 0.5);
+        color: $input-color-form;
 
         &-wrap {
           display: flex;
           justify-content: space-between;
           padding-bottom: 10px;
 
+          .form-table {
+
+            &__date {
+              appearance: none;
+            }
+
+            &__people, &__time {
+              appearance: none;
+              background: url(../img/icon/down_icon.png) 92%/12px no-repeat #e5e5e5;
+            }
+          }
+
           .input:nth-child(odd) {
             margin-right: 10px;
+          }
+
+          .input::placeholder {
+            color: $input-color-form;
           }
         }
       }
@@ -440,6 +458,66 @@
       .description {
         opacity: 0.9;
       }
+    }
+  }
+}
+
+.menu {
+  &-block {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .block-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 42%;
+
+      .subtitle {
+        text-align: center;
+        padding-top: 25px;
+      }
+    }
+  }
+
+  &-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &-item {
+      list-style: none;
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+      padding: 15px 3.2%;
+      margin: 50px 0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    &-item:last-child {
+      border: 0;
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-item {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      color: rgba(51, 51, 51, 0.5);
+      height: 65px;
+      width: 27%;
+    }
+
+    &-span {
+      font-family: Banny, sans-serif;
+      font-size: 18px;
+      color: #333333;
     }
   }
 }
