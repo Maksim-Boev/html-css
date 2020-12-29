@@ -666,6 +666,7 @@ $input-color-form: rgba(51, 51, 51, 0.5);
             display: flex;
             align-items: center;
           }
+
           .address:before {
             content: "";
             background: url(../img/icon/map-marker.png) 0px/18px no-repeat;
@@ -673,10 +674,12 @@ $input-color-form: rgba(51, 51, 51, 0.5);
             height: 30px;
             padding-right: 5px;
           }
+
           .phone {
             display: flex;
             align-items: center;
           }
+
           .phone:before {
             content: "";
             background: url(../img/icon/phone.png) 0px/18px no-repeat;
@@ -689,6 +692,7 @@ $input-color-form: rgba(51, 51, 51, 0.5);
             display: flex;
             align-items: center;
           }
+
           .email:before {
             content: "";
             background: url(../img/icon/envelope.png) 0px/18px no-repeat;
@@ -701,6 +705,33 @@ $input-color-form: rgba(51, 51, 51, 0.5);
         .submit-btn {
           width: 50%;
         }
+      }
+    }
+  }
+}
+
+.maps {
+  &-block {
+    display: flex;
+    flex-direction: column;
+
+    #map {
+      width: 100%;
+      height: 500px;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 45px 0;
+      font-family: "Open Sans", sans-serif;
+      background: rgba(0, 0, 0, 0.9);
+      color: rgba(255, 255, 255, 0.5);
+
+      &-span {
+        font-weight: 600;
       }
     }
   }
