@@ -56,6 +56,28 @@
   line-height: 24px;
 }
 
+.header-title {
+  padding: 45px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.footer-about {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(51, 51, 51, 0.5);
+  padding: 60px 0;
+
+  &-span {
+    font-weight: bold;
+  }
+}
+
 .header-main {
   display: flex;
   flex-direction: column;
@@ -249,12 +271,12 @@
 
   .square-bgr {
     display: flex;
-    direction: rtl;
     align-items: center;
     filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
   }
 
   .square-bgr:before {
+    right: 0;
     @include square(50%)
   }
 }
@@ -262,17 +284,6 @@
 .team {
   background: url("../img/team-bg.png") center center;
   background-size: cover;
-
-  .header-title {
-    padding: 45px 0;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 5px;
-  }
 
   &__img {
     border-radius: 5px;
@@ -321,12 +332,12 @@
 
     .square-bgr {
       display: flex;
-      direction: rtl;
       align-items: center;
       filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
     }
 
     .square-bgr:before {
+      right: 0;
       @include square(50%)
     }
 
@@ -401,29 +412,11 @@
       }
     }
   }
-
-  &__about {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    color: rgba(51, 51, 51, 0.5);
-    padding: 60px 0;
-  }
 }
 
 .specialties {
   background: url("../img/specialties-bg.png") center center;
   background-size: cover;
-
-  .header-title {
-    padding: 45px 0;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 5px;
-  }
 
   &__img {
     border-radius: 5px;
@@ -506,18 +499,104 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     &-item {
-      font-family: "Open Sans", sans-serif;
-      font-size: 12px;
-      color: rgba(51, 51, 51, 0.5);
-      height: 65px;
-      width: 27%;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      padding-bottom: 20px;
+      .item-top-block {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        font-family: Banny, sans-serif;
+        font-size: 18px;
+        color: #333333;
+      }
+      .item-description {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        color: rgba(51, 51, 51, 0.5);
+      }
     }
 
     &-span {
       font-family: Banny, sans-serif;
       font-size: 18px;
       color: #333333;
+    }
+  }
+}
+
+.privat {
+  background: url("../img/private-bg.png") center center;
+  background-size: cover;
+
+  &-block {
+    .img-block {
+      display: flex;
+      justify-content: space-evenly;
+
+      .square-bgr-left {
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+        &-title{
+          .left-title-text{
+            padding-left: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: "Banny", sans-serif;
+          }
+          display: flex;
+          align-items: center;
+          background: #000000;
+          border-radius: 5px 5px 0px 0px;
+          position: absolute;
+          left: 198px;
+          transform: rotate(90deg);
+          width: 475px;
+          height: 80px;
+        }
+      }
+
+      .square-bgr-left:before {
+        @include square(-50%)
+      }
+
+      .square-bgr-right {
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+        &-title{
+          .right-title-text{
+            padding-left: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: "Banny", sans-serif;
+          }
+          display: flex;
+          align-items: center;
+          background: #000000;
+          border-radius: 5px 5px 0px 0px;
+          position: absolute;
+          right: 198px;
+          transform: rotate(-90deg);
+          width: 475px;
+          height: 80px;
+        }
+      }
+
+      .square-bgr-right:before {
+        right: 0;
+        @include square(50%)
+      }
+    }
+    .footer-about{
+      color: rgba(255, 255, 255, 0.5);
     }
   }
 }
