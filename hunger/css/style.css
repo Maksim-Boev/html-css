@@ -346,14 +346,6 @@
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.booking__block .form-table .input-wrap .form-table__date::-webkit-calendar-picker-indicator {
-  position: relative;
-  width: 110%;
-  height: 50px;
-  background: none;
-  margin: 0 -10px;
-  right: 10px;
-}
 .booking__block .form-table .input-wrap .form-table__people, .booking__block .form-table .input-wrap .form-table__time {
   appearance: none;
   background: url(../img/icon/down_icon.png) 92%/12px no-repeat #e5e5e5;

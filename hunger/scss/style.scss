@@ -373,16 +373,6 @@ $input-color-form: rgba(51, 51, 51, 0.5);
           padding-bottom: 10px;
 
           .form-table {
-
-            &__date::-webkit-calendar-picker-indicator {
-              position: relative;
-              width: 110%;
-              height: 50px;
-              background: none;
-              margin: 0 -10px;
-              right: 10px;
-            }
-
             &__people, &__time {
               appearance: none;
               background: url(../img/icon/down_icon.png) 92%/12px no-repeat #e5e5e5;
