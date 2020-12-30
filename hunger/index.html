@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<header class="header-main container">
+<header class="container header-main">
     <nav class="nav">
         <ul class="nav-list">
             <li class="nav-list__item">home</li>
@@ -36,7 +36,7 @@
             <div class="title">hungry people</div>
             <div class="block-btn">
                 <button class="block-btn__btn-colored btn-yellow">book table</button>
-                <button class="block-btn__btn-outline">exploreE</button>
+                <button class="block-btn__btn-outline">explore</button>
             </div>
             <div class="border-outline">
                 <i class="border-outline__btn-down fas fa-angle-down"></i>
@@ -51,7 +51,7 @@
     </div>
     <div class="line line-center-small"></div>
 </header>
-<section class="about-us container">
+<section class="container about-us">
     <div class="about-us__block">
         <div class="text">
             <div class="title">about us</div>
@@ -70,7 +70,7 @@
         </div>
     </div>
 </section>
-<section class="team container">
+<section class="container team">
     <div class="header-title">our team</div>
     <div class="team__block">
         <div class="square-bgr">
@@ -90,7 +90,7 @@
         </div>
     </div>
 </section>
-<section class="booking container">
+<section class="container booking">
     <div class="booking__block">
         <div class="booking__form">
             <div class="title">book a table</div>
@@ -112,9 +112,8 @@
                 </div>
 
                 <div class="input-wrap">
-                    <input type="text" name="date" placeholder="Date" onfocus="(this.type='date')"
-                           onblur="(this.type='text')" class="form-table__date input">
-
+                    <input type="text" name="date" placeholder="Date" onmouseover="(this.type='date')"
+                           onmouseout="(this.type='text')" class="form-table__date input">
                     <select name="time" class="form-table__time input">
                         <option value="">Time</option>
                     </select>
@@ -132,7 +131,7 @@
             class="footer-about-span">8PM - 3AM</span> , Phone: <span class="footer-about-span">+40 729 131 637/+40 726 458 782</span>
     </div>
 </section>
-<section class="specialties container">
+<section class="container specialties">
     <div class="header-title">specialties</div>
     <div class="specialties__block">
         <div class="square-bgr">
@@ -152,7 +151,7 @@
         </div>
     </div>
 </section>
-<section class="menu container">
+<section class="container menu">
     <div class="menu-block">
         <div class="block-title">
             <div class="title">delicious menu</div>
@@ -342,7 +341,7 @@
         </div>
     </div>
 </section>
-<section class="privat container">
+<section class="container privat">
     <div class="privat-block">
         <div class="header-title">private events</div>
         <div class="img-block">
@@ -366,7 +365,7 @@
         </div>
     </div>
 </section>
-<section class="gallery container">
+<section class="container gallery">
     <div class="gallery-block">
         <div class="wrap-photo">
             <img src="img/gallery-1.jpg" alt="photo" class="gallery-block-photo">
@@ -382,7 +381,7 @@
         </div>
     </div>
 </section>
-<section class="contact container">
+<section class="container contact">
     <div class="contact-block">
         <div class="title">contact</div>
         <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie
@@ -409,21 +408,20 @@
                         <img src="img/icon/envelope.png" alt="" class="block-contacts-icon">
                         <div class="block-contacts-text">office@mindblister.com</div>
                     </div>
-
                 </div>
-                <input type="submit" class="submit-btn btn-yellow" value="SEND MESSAGE">
+                <button class="submit-btn btn-yellow">send message</button>
             </div>
         </form>
     </div>
 </section>
-<section class="maps container">
+<section class="container maps">
     <div class="maps-block">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10161.677602470494!2d30.346006214520205!3d50.451914367643575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1609250301808!5m2!1suk!2sua"
                 width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
     </div>
 </section>
-<footer class="footer container">
+<footer class="container footer">
     <pre>
         © Copyright <span class="footer-span">Mindblister</span> 2021
     </pre>
